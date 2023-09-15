@@ -35,6 +35,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="music.note" catalog="system" title=""/>
+                                <connections>
+                                    <action selector="playMusicAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="uDe-te-P5e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbi-q4-Duw">
                                 <rect key="frame" x="69" y="625" width="24" height="13"/>

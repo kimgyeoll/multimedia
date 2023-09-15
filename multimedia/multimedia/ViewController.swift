@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     var currentIndex: Int = 0
     
+    var audioPlayer: AVAudioPlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -43,9 +45,43 @@ class ViewController: UIViewController {
         let url : URL = URL(fileURLWithPath: path)
         videoPlayerVC.player = AVPlayer(url: url)
         
-        present(videoPlayerVC, animated: true){
+        present(videoPlayerVC, animated: true) {
             videoPlayerVC.player?.play()
+        }
+    }
+    
+    @IBAction func playMusicAction() {
+        let actionSheet = UIAlertController(title: "선택", message: "노래 골라", preferredStyle: .actionSheet)
+        let action1 = UIAlertAction(title: "1번음악", style: .default) {
+           [weak self] a in self?.playMusic(name: "1")
+        }
+        actionSheet.addAction(action1)
+        
+        let action2 = UIAlertAction(title: "2번음악", style: .default) {
+            [weak self]   a in self?.playMusic(name: "2")
+        }
+        actionSheet.addAction(action2)
+        
+        let action3 = UIAlertAction(title: "3번음악", style: .default) {
+            [weak self] a in self?.playMusic(name: "3")
+        }
+        actionSheet.addAction(action3)
+        
+        present(actionSheet,animated: true)
+    }
+    
+    func playMusic(name: String) {
+        print(name)
+        let path = Bundle.main.path(forResource: name, ofType: "mp3")
+        ?? "" ;
+        let url = URL(fileURLWithPath: path)
+        do {
+            self.audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        }catch {
+            print(error.localizedDescription)
         }
     }
 }
 
+ 
