@@ -13,6 +13,9 @@
 		6169BB242AA173BF0024FF57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6169BB222AA173BF0024FF57 /* Main.storyboard */; };
 		6169BB262AA173C00024FF57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6169BB252AA173C00024FF57 /* Assets.xcassets */; };
 		6169BB292AA173C00024FF57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6169BB272AA173C00024FF57 /* LaunchScreen.storyboard */; };
+		618F99652AB4215600A0AB10 /* S1.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 618F99622AB4215600A0AB10 /* S1.MP4 */; };
+		618F99662AB4215600A0AB10 /* car1.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 618F99632AB4215600A0AB10 /* car1.MP4 */; };
+		618F99672AB4215600A0AB10 /* X1.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 618F99642AB4215600A0AB10 /* X1.MP4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		6169BB252AA173C00024FF57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6169BB282AA173C00024FF57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6169BB2A2AA173C00024FF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618F99622AB4215600A0AB10 /* S1.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = S1.MP4; sourceTree = "<group>"; };
+		618F99632AB4215600A0AB10 /* car1.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = car1.MP4; sourceTree = "<group>"; };
+		618F99642AB4215600A0AB10 /* X1.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = X1.MP4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		6169BB1B2AA173BF0024FF57 /* multimedia */ = {
 			isa = PBXGroup;
 			children = (
+				618F99612AB4215600A0AB10 /* Media */,
 				6169BB1C2AA173BF0024FF57 /* AppDelegate.swift */,
 				6169BB1E2AA173BF0024FF57 /* SceneDelegate.swift */,
 				6169BB202AA173BF0024FF57 /* ViewController.swift */,
@@ -65,6 +72,16 @@
 				6169BB2A2AA173C00024FF57 /* Info.plist */,
 			);
 			path = multimedia;
+			sourceTree = "<group>";
+		};
+		618F99612AB4215600A0AB10 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				618F99622AB4215600A0AB10 /* S1.MP4 */,
+				618F99632AB4215600A0AB10 /* car1.MP4 */,
+				618F99642AB4215600A0AB10 /* X1.MP4 */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +142,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618F99672AB4215600A0AB10 /* X1.MP4 in Resources */,
 				6169BB292AA173C00024FF57 /* LaunchScreen.storyboard in Resources */,
+				618F99652AB4215600A0AB10 /* S1.MP4 in Resources */,
 				6169BB262AA173C00024FF57 /* Assets.xcassets in Resources */,
 				6169BB242AA173BF0024FF57 /* Main.storyboard in Resources */,
+				618F99662AB4215600A0AB10 /* car1.MP4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
